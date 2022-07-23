@@ -7,6 +7,7 @@ const initWebRoute = (app) => {
     //post muốn thêm thông tin vào dtb (Create in Create-Read-Update-Delete)
     router.get('/', homeController.getHomepage);
     router.get('/detail/user/:id', homeController.getDetailPage)
+    router.post('/create-new-user', homeController.createNewUser)
     router.get('/about', (req, res) => {
         res.send(`I'm BigBee`)
     })
